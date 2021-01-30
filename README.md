@@ -84,3 +84,26 @@ Infinite is a multi-purpose blog-magazine script. It has clean, responsive and u
 + Cross-Site Scripting (XSS) Prevention
 + Password Hashing
 + Avoiding SQL Injection
+
+## Requirements
++ PHP >= 5.6
++ cURL PHP Extension
++ Fileinfo PHP Extension
++ Mbstring PHP Extension
+
+## Demo
+Demo Link : <a href="http://infinite.codingest.com/">Demo</a>
+
+Admin Demo Link: <a href="http://infinite.codingest.com/admin">Demo</a>
+
+Admin
+Username: admin
+Password: 1234
+
+Author
+Username: author
+Password: 1234
+
+User
+Username: user
+Password: 1234
