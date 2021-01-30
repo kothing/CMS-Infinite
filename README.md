@@ -78,3 +78,9 @@ Infinite is a multi-purpose blog-magazine script. It has clean, responsive and u
 + Easy Installation Using Installation Wizard
 + Detailed Documentation
 + Runs on PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4
+
+## Security
++ Cross-Site Request Forgery (CSRF) Prevention
++ Cross-Site Scripting (XSS) Prevention
++ Password Hashing
++ Avoiding SQL Injection
