@@ -1,0 +1,2 @@
+# infinite
+ Blog & Magazine Script
