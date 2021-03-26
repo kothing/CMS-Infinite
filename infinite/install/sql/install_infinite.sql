@@ -896,7 +896,8 @@ INSERT INTO `language_translations` (`id`, `lang_id`, `label`, `translation`) VA
 (540, 1, 'font_family', 'Font Family'),
 (541, 1, 'fonts', 'Fonts'),
 (542, 1, 'update_font', 'Update Font'),
-(543, 1, 'msg_item_added', 'Item successfully added!');
+(543, 1, 'msg_item_added', 'Item successfully added!'),
+(544, 1, 'all_posts', 'All Posts');
 
 -- --------------------------------------------------------
 
