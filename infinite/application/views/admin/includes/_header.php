@@ -160,9 +160,9 @@
                         </ul>
                     </li>
                 <?php endif; ?>
-                <li class="treeview<?php is_admin_nav_active(['add-post', 'add-video']); ?>">
+                <li class="treeview<?php is_admin_nav_active(['posts', 'add-post', 'add-video', 'slider-posts', 'our-picks', 'pending-posts', 'update-post']); ?>">
                     <a href="#">
-                        <i class="fa fa-file"></i> <span><?php echo trans("add_post"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                        <i class="fa fa-bars"></i> <span><?php echo trans("posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="nav-add-post">
@@ -171,14 +171,6 @@
                         <li class="nav-add-video">
                             <a href="<?php echo admin_url(); ?>add-video"><?php echo trans("add_video"); ?></a>
                         </li>
-                    </ul>
-                </li>
-
-                <li class="treeview<?php is_admin_nav_active(['posts', 'slider-posts', 'our-picks', 'pending-posts', 'update-post']); ?>">
-                    <a href="#">
-                        <i class="fa fa-bars"></i> <span><?php echo trans("posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
                         <li class="nav-posts">
                             <a href="<?php echo admin_url(); ?>posts"><?php echo trans("posts"); ?></a>
                         </li>
