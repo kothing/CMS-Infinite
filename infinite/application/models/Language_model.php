@@ -70,7 +70,7 @@ class Language_model extends CI_Model
             'contact_phone' => "",
             'cookies_warning' => 0,
             'cookies_warning_text' => "",
-            'copyright' => "Copyright 2020 Infinite - All Rights Reserved.",
+            'copyright' => "Copyright 2099 Infinite - All Rights Reserved.",
         );
 
         $this->db->insert('settings', $settings);
