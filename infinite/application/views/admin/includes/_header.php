@@ -160,9 +160,9 @@
                         </ul>
                     </li>
                 <?php endif; ?>
-                <li class="treeview<?php is_admin_nav_active(['posts', 'add-post', 'add-video', 'slider-posts', 'our-picks', 'pending-posts', 'update-post']); ?>">
+                <li class="treeview<?php is_admin_nav_active(['posts', 'add-post', 'add-video', 'slider-posts', 'our-picks', 'pending-posts', 'update-post', 'drafts']); ?>">
                     <a href="#">
-                        <i class="fa fa-bars"></i> <span><?php echo trans("posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                        <i class="fa fa-file-text-o"></i> <span><?php echo trans("posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="nav-add-post">
@@ -185,12 +185,10 @@
                         <li class="nav-pending-posts">
                             <a href="<?php echo admin_url(); ?>pending-posts"><?php echo trans("pending_posts"); ?></a>
                         </li>
+                        <li class="nav-drafts">
+                            <a href="<?php echo admin_url(); ?>drafts"><?php echo trans("drafts"); ?></a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-drafts">
-                    <a href="<?php echo admin_url(); ?>drafts">
-                        <i class="fa fa-file-text-o" aria-hidden="true"></i> <span><?php echo trans("drafts"); ?></span>
-                    </a>
                 </li>
                 <?php if (is_admin()): ?>
                     <li class="treeview<?php is_admin_nav_active(['import-feed', 'update-feed', 'feeds']); ?>">
