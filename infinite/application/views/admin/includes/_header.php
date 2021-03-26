@@ -103,7 +103,6 @@
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -172,7 +171,7 @@
                             <a href="<?php echo admin_url(); ?>add-video"><?php echo trans("add_video"); ?></a>
                         </li>
                         <li class="nav-posts">
-                            <a href="<?php echo admin_url(); ?>posts"><?php echo trans("posts"); ?></a>
+                            <a href="<?php echo admin_url(); ?>posts"><?php echo trans("all_posts"); ?></a>
                         </li>
                         <?php if (is_admin()): ?>
                             <li class="nav-slider-posts">
