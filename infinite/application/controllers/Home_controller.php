@@ -493,7 +493,7 @@ class Home_controller extends Home_Core_Controller
         get_method();
         if ($this->general_settings->show_rss == 1) {
             $this->load->helper('xml');
-            $data['feed_name'] = $this->settings->site_title . " - " . trans("all_posts");
+            $data['feed_name'] = $this->settings->site_title . " - " . trans("rss_all_posts");
             $data['encoding'] = 'utf-8';
             $data['feed_url'] = lang_base_url() . "rss/posts";
             $data['page_description'] = $this->settings->site_title;
