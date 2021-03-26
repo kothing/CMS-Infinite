@@ -22,7 +22,7 @@
 						<div class="page-content font-text page-rss">
 							<div class="rss-item">
 								<div class="left">
-									<a href="<?php echo lang_base_url(); ?>rss/posts" target="_blank"><i class="fa fa-rss"></i>&nbsp;&nbsp;<?php echo trans("all_posts"); ?></a>
+									<a href="<?php echo lang_base_url(); ?>rss/posts" target="_blank"><i class="fa fa-rss"></i>&nbsp;&nbsp;<?php echo trans("rss_all_posts"); ?></a>
 								</div>
 								<div class="right">
 									<p><?php echo lang_base_url() . "rss/posts"; ?></p>
