@@ -103,6 +103,7 @@
                             </li>
                         </ul>
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -190,21 +191,6 @@
                     </ul>
                 </li>
                 <?php if (is_admin()): ?>
-                    <li class="treeview<?php is_admin_nav_active(['import-feed', 'update-feed', 'feeds']); ?>">
-                        <a href="#">
-                            <i class="fa fa-rss"></i> <span><?php echo trans("rss_feeds"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li class="nav-import-feed">
-                                <a href="<?php echo admin_url(); ?>import-feed"><?php echo trans("import_rss_feed"); ?></a>
-                            </li>
-                            <li class="nav-feeds">
-                                <a href="<?php echo admin_url(); ?>feeds"><?php echo trans("rss_feeds"); ?></a>
-                            </li>
-                        </ul>
-                    </li>
-                <?php endif; ?>
-                <?php if (is_admin()): ?>
                     <li class="treeview<?php is_admin_nav_active(['categories', 'subcategories', 'update-category', 'update-subcategory']); ?>">
                         <a href="#">
                             <i class="fa fa-folder-open"></i> <span><?php echo trans("categories"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
@@ -264,11 +250,18 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-contact-messages">
-                        <a href="<?php echo admin_url(); ?>contact-messages">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            <span><?php echo trans("contact_messages"); ?></span>
+                    <li class="treeview<?php is_admin_nav_active(['import-feed', 'update-feed', 'feeds']); ?>">
+                        <a href="#">
+                            <i class="fa fa-rss"></i> <span><?php echo trans("rss_feeds"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                         </a>
+                        <ul class="treeview-menu">
+                            <li class="nav-import-feed">
+                                <a href="<?php echo admin_url(); ?>import-feed"><?php echo trans("import_rss_feed"); ?></a>
+                            </li>
+                            <li class="nav-feeds">
+                                <a href="<?php echo admin_url(); ?>feeds"><?php echo trans("rss_feeds"); ?></a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="treeview<?php is_admin_nav_active(['send-email-subscribers', 'subscribers']); ?>">
                         <a href="#">
@@ -283,14 +276,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-ad-spaces">
-                        <a href="<?php echo admin_url(); ?>ad-spaces?type=index_top">
-                            <i class="fa fa-dollar" aria-hidden="true"></i>
-                            <span><?php echo trans("ad_spaces"); ?></span>
-                        </a>
-                    </li>
-                <?php endif; ?>
-                <?php if (is_admin()): ?>
                     <li class="treeview<?php is_admin_nav_active(['add-user', 'users']); ?>">
                         <a href="#">
                             <i class="fa fa-users"></i> <span><?php echo trans("users"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
@@ -304,15 +289,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-cache-system">
-                        <a href="<?php echo admin_url(); ?>cache-system">
-                            <i class="fa fa-database"></i>
-                            <span><?php echo trans("cache_system"); ?></span>
+                    <li class="nav-contact-messages">
+                        <a href="<?php echo admin_url(); ?>contact-messages">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span><?php echo trans("contact_messages"); ?></span>
                         </a>
                     </li>
-                    <li class="nav-seo-tools">
-                        <a href="<?php echo admin_url(); ?>seo-tools"><i class="fa fa-wrench"></i>
-                            <span><?php echo trans("seo_tools"); ?></span>
+                    <li class="nav-ad-spaces">
+                        <a href="<?php echo admin_url(); ?>ad-spaces?type=index_top">
+                            <i class="fa fa-dollar" aria-hidden="true"></i>
+                            <span><?php echo trans("ad_spaces"); ?></span>
                         </a>
                     </li>
                     <li class="nav-social-login">
@@ -326,16 +312,27 @@
                             <span><?php echo trans("email_settings"); ?></span>
                         </a>
                     </li>
+                    <li class="nav-font-settings">
+                        <a href="<?php echo admin_url(); ?>font-settings">
+                            <i class="fa fa-font" aria-hidden="true"></i>
+                            <span><?php echo trans("font_settings"); ?></span>
+                        </a>
+                    </li>
                     <li class="nav-language-settings">
                         <a href="<?php echo admin_url(); ?>language-settings">
                             <i class="fa fa-language"></i>
                             <span><?php echo trans("language_settings"); ?></span>
                         </a>
                     </li>
-                    <li class="nav-font-settings">
-                        <a href="<?php echo admin_url(); ?>font-settings">
-                            <i class="fa fa-font" aria-hidden="true"></i>
-                            <span><?php echo trans("font_settings"); ?></span>
+                    <li class="nav-seo-tools">
+                        <a href="<?php echo admin_url(); ?>seo-tools"><i class="fa fa-wrench"></i>
+                            <span><?php echo trans("seo_tools"); ?></span>
+                        </a>
+                    </li>
+                    <li class="nav-cache-system">
+                        <a href="<?php echo admin_url(); ?>cache-system">
+                            <i class="fa fa-database"></i>
+                            <span><?php echo trans("cache_system"); ?></span>
                         </a>
                     </li>
                     <li class="nav-settings">
