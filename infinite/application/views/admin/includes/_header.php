@@ -162,7 +162,7 @@
                 <?php endif; ?>
                 <li class="treeview<?php is_admin_nav_active(['posts', 'add-post', 'add-video', 'slider-posts', 'our-picks', 'pending-posts', 'update-post', 'drafts']); ?>">
                     <a href="#">
-                        <i class="fa fa-file-text-o"></i> <span><?php echo trans("all_posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                        <i class="fa fa-file-text-o"></i> <span><?php echo trans("posts"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="nav-add-post">
