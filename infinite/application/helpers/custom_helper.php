@@ -402,7 +402,7 @@ if (!function_exists('get_logo')) {
                 return base_url() . $settings->logo_path;
             }
         }
-        return base_url() . "assets/img/logo.png";
+        return base_url() . "assets/img/logo.svg";
     }
 }
 
