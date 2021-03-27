@@ -892,9 +892,6 @@ img {
 
 .modal-search .form-control:focus,
 .modal-search .form-control {
-  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
-  border: medium none;
-  color: #fff;
   font-size: 14px;
   height: 64px;
   padding: 5px 20px;
