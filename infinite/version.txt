@@ -1,0 +1,3 @@
+Infinite - Blog & Magazine Script
+
+Version 4.2.0
