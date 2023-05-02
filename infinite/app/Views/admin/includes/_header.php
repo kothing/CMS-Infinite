@@ -259,7 +259,7 @@
                     </li>
                 <?php endif;
                 if (hasPermission('membership')): ?>
-                    <li class="treeview<?= isAdminNavActive(['add-user', 'users']); ?>">
+                    <li class="treeview<?= isAdminNavActive(['roles-permissions', 'add-user', 'users']); ?>">
                         <a href="#">
                             <i class="fa fa-users"></i>
                             <span class="label-name">
